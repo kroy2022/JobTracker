@@ -1,8 +1,13 @@
-# React TypeScript Chrome Extension
+# JobTracker Chrome Extension
 
 ## Overview
 
-This project demonstrates how to build a Chrome Extension using React and TypeScript. It includes examples of a Popup and a Content Script React app, both built and bundled with Vite and crxjs.
+This chrome extension detects when you are on a job application and allows you to save the link, status, position, and date applied so you never lose track of where you have applied
+
+Future editions: 
+  - Fix logic for potential application
+  - Enhance UI
+  - Alert you if you've already applied for a job
 
 ## Setup
 
