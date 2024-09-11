@@ -15,3 +15,88 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  position: fixed;
+  background-color: #F9F9F9;
+  max-width: 20vw;
+  height: auto;
+  z-index: 9999;
+  color: black;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hidden */
+}
+
+.container.show {
+  display: block; /* Show when needed */
+}
+.job-info-div {
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.job-info-div::-webkit-scrollbar {
+  width: .5vw;
+}
+
+.job-info-div::-webkit-scrollbar-track {
+  background: black;
+}
+
+.job-info-div::-webkit-scrollbar-thumb {
+  background: #21242E;  
+  border-radius: 5px;
+}
+
+.application {
+  background-color: #cecece;
+  border-color: black;
+  margin-top: 1vh;
+  text-align: left;
+  width: 100%;
+  
+  .job {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+.btn {
+  padding: 1vw;
+  margin-top: 2vh;
+  background-color: black;
+  color: white;
+  width: 10vw;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.title-i {
+  margin-top: 1vh;
+  border: 0;
+  border-bottom: 4px solid #21242E;
+  margin-right: 15px;
+  padding: 0.7rem 0.3rem;
+  width: 15vw;
+  font-size: 1rem;
+  transition: border-bottom ease-out 0.2s;
+  text-align: center
+}
+
+.title-i:focus {
+  outline: 0;
+  border-bottom: 4px solid  #5db3de;
+}
+
+.title-i:hover {
+  border-bottom: 4px solid  #5db3de;
+}
